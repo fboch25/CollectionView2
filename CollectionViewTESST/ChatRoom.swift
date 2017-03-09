@@ -10,12 +10,8 @@ import Foundation
 import UIKit
 
 class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    
-    
+    git
     @IBOutlet weak var collectionView2: UICollectionView!
-    
-    
     
     var secondClass : ChatCell?
     
