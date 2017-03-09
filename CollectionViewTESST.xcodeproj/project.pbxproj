@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FCA520E81E71000D006F49C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA520E71E71000D006F49C3 /* AppDelegate.swift */; };
-		FCA520EA1E71000D006F49C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA520E91E71000D006F49C3 /* ViewController.swift */; };
 		FCA520ED1E71000D006F49C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA520EB1E71000D006F49C3 /* Main.storyboard */; };
 		FCA520EF1E71000D006F49C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA520EE1E71000D006F49C3 /* Assets.xcassets */; };
 		FCA520F21E71000D006F49C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA520F01E71000D006F49C3 /* LaunchScreen.storyboard */; };
 		FCA520FD1E71000E006F49C3 /* CollectionViewTESSTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA520FC1E71000E006F49C3 /* CollectionViewTESSTTests.swift */; };
+		FCA5210A1E712F43006F49C3 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA521091E712F43006F49C3 /* ChatCell.swift */; };
+		FCA5210C1E71C4E9006F49C3 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA5210B1E71C4E9006F49C3 /* ChatRoom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		FCA520E41E71000D006F49C3 /* CollectionViewTESST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTESST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA520E71E71000D006F49C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCA520E91E71000D006F49C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCA520EC1E71000D006F49C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA520EE1E71000D006F49C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA520F11E71000D006F49C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		FCA520F81E71000E006F49C3 /* CollectionViewTESSTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewTESSTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA520FC1E71000E006F49C3 /* CollectionViewTESSTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTESSTTests.swift; sourceTree = "<group>"; };
 		FCA520FE1E71000E006F49C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA521091E712F43006F49C3 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		FCA5210B1E71C4E9006F49C3 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				FCA520E71E71000D006F49C3 /* AppDelegate.swift */,
-				FCA520E91E71000D006F49C3 /* ViewController.swift */,
+				FCA521091E712F43006F49C3 /* ChatCell.swift */,
 				FCA520EB1E71000D006F49C3 /* Main.storyboard */,
+				FCA5210B1E71C4E9006F49C3 /* ChatRoom.swift */,
 				FCA520EE1E71000D006F49C3 /* Assets.xcassets */,
 				FCA520F01E71000D006F49C3 /* LaunchScreen.storyboard */,
 				FCA520F31E71000D006F49C3 /* Info.plist */,
@@ -201,8 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA520EA1E71000D006F49C3 /* ViewController.swift in Sources */,
 				FCA520E81E71000D006F49C3 /* AppDelegate.swift in Sources */,
+				FCA5210C1E71C4E9006F49C3 /* ChatRoom.swift in Sources */,
+				FCA5210A1E712F43006F49C3 /* ChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +416,7 @@
 				FCA521031E71000E006F49C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCA521041E71000E006F49C3 /* Build configuration list for PBXNativeTarget "CollectionViewTESSTTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				FCA521061E71000E006F49C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

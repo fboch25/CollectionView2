@@ -1,26 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xox-uE-CSp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Chat Room-->
+        <scene sceneID="vYS-0U-bYf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xox-uE-CSp" customClass="ChatRoom" customModule="CollectionViewTESST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="GPr-Cz-EIu"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOl-IG-737"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="dkL-ZU-Zw4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Krq-YP-6tC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jzr-F5-FBG">
+                                    <size key="itemSize" width="180" height="167"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Sht-k7-NRt" customClass="ChatCell" customModule="CollectionViewTESST" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKy-HO-nqR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="139"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky9-Br-JBf">
+                                                    <rect key="frame" x="0.0" y="159" width="180" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="uKy-HO-nqR" firstAttribute="leading" secondItem="Sht-k7-NRt" secondAttribute="leading" id="3ie-dc-gDM"/>
+                                            <constraint firstAttribute="trailing" secondItem="uKy-HO-nqR" secondAttribute="trailing" id="Cz1-Li-8eu"/>
+                                            <constraint firstItem="uKy-HO-nqR" firstAttribute="top" secondItem="Sht-k7-NRt" secondAttribute="top" id="Los-6E-qoq"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="uKy-HO-nqR" secondAttribute="bottom" constant="20" id="cNV-Rz-GWN"/>
+                                            <constraint firstItem="uKy-HO-nqR" firstAttribute="trailing" secondItem="Ky9-Br-JBf" secondAttribute="trailing" id="jdY-Qm-uRT"/>
+                                            <constraint firstItem="Ky9-Br-JBf" firstAttribute="bottom" secondItem="Sht-k7-NRt" secondAttribute="bottomMargin" id="qgQ-LJ-qKD"/>
+                                            <constraint firstItem="uKy-HO-nqR" firstAttribute="leading" secondItem="Ky9-Br-JBf" secondAttribute="leading" id="vhS-YM-KSp"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="chatImage" destination="uKy-HO-nqR" id="qaE-db-Wez"/>
+                                            <outlet property="chatLabel" destination="Ky9-Br-JBf" id="yv4-kY-cuZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjx-CS-oHL">
+                                <rect key="frame" x="329" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didSelectCreateButton" destination="Xox-uE-CSp" eventType="touchUpInside" id="kbO-3H-v6d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Krq-YP-6tC" firstAttribute="bottom" secondItem="aOl-IG-737" secondAttribute="top" id="0ZG-lK-JST"/>
+                            <constraint firstItem="Krq-YP-6tC" firstAttribute="top" secondItem="dkL-ZU-Zw4" secondAttribute="top" id="LOW-EK-bgN"/>
+                            <constraint firstItem="Wjx-CS-oHL" firstAttribute="trailing" secondItem="Krq-YP-6tC" secondAttribute="trailing" id="jQH-UZ-hrp"/>
+                            <constraint firstItem="Wjx-CS-oHL" firstAttribute="top" secondItem="GPr-Cz-EIu" secondAttribute="bottom" id="lYZ-8s-Laf"/>
+                            <constraint firstAttribute="trailing" secondItem="Wjx-CS-oHL" secondAttribute="trailing" id="rWJ-qw-fqp"/>
+                            <constraint firstItem="Krq-YP-6tC" firstAttribute="leading" secondItem="dkL-ZU-Zw4" secondAttribute="leading" id="zog-Qb-pLM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="P3V-Z2-v1X"/>
+                    <connections>
+                        <outlet property="collectionView2" destination="Krq-YP-6tC" id="mtU-le-jKn"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKU-di-Z4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2578" y="-196"/>
         </scene>
     </scenes>
 </document>
