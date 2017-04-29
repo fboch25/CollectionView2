@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "2042e203adfa2e3afd5f645a7ee36c30"
+build_time: [546760177, 920402000]
+inputs:
+  "/Users/Mrbochiballs1/MakeSchool/CollectionViewTESST/CollectionViewTESST/LoginViewController.swift": [546760177, 0]
+  "/Users/Mrbochiballs1/MakeSchool/CollectionViewTESST/CollectionViewTESST/AppDelegate.swift": [542344461, 0]
+  "/Users/Mrbochiballs1/MakeSchool/CollectionViewTESST/CollectionViewTESST/ChatRoom.swift": [546760089, 0]
+  "/Users/Mrbochiballs1/MakeSchool/CollectionViewTESST/CollectionViewTESST/ChatCell.swift": [545879567, 0]

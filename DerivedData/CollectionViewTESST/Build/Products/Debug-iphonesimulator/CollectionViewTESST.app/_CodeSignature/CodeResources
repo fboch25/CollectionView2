@@ -35,29 +35,35 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zx2m591EMUb3Dbkwpoo3kw8hPZM=
+			GnMdGFfDuvwAuWJN7FS9ELLozY4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-Xox-uE-CSp.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tLn9sXR8MeEswp8E6QAEP9iulwA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/Xox-uE-CSp-view-dkL-ZU-Zw4.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d+TdMVynSI2F84b3vq0INyAo6Dw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
+		<data>
+		AqAce3tUNc5wJ9gRUZYmJHDuZz4=
+		</data>
+		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
+		<data>
+		FrxJ1DgXOfHhKzhNYaGmeEyoj54=
+		</data>
+		<key>Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources</key>
+		<data>
+		TCxqtoNftUaC3yBQ/1btkVcgfi8=
+		</data>
+		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
+		<data>
+		Yx4ouKapVSibZ4u9OTxkb7BswAs=
+		</data>
+		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
+		<data>
+		msUJEUKLgxqrFmomoyR6QVN85YI=
+		</data>
+		<key>Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources</key>
+		<data>
+		cSoYVFVaukOLLQaxXOajF3PsXe4=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		blagc+UjPVBTHaTHbrlBKbVn20I=
@@ -90,13 +96,17 @@
 		<data>
 		GFkfH9LdwOjFdGgcp8dBIwEVzyA=
 		</data>
+		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
+		<data>
+		UIWHE/Dy6+jPX0wz0/+wacnjp9o=
+		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
 		AA0v+jaj04fmfPqsLDKMF0ahBEo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ck8qm8RF6d9aSf9jutqs2H6N28w=
+		B5+nEjYuWaPKzH72PdW5JrfzBt0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -152,40 +162,80 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zx2m591EMUb3Dbkwpoo3kw8hPZM=
+			GnMdGFfDuvwAuWJN7FS9ELLozY4=
 			</data>
 			<key>hash2</key>
 			<data>
-			NvCraQ1qgtNXK/HaNpdk/0SWYb+s7oQuJAwWEApD9W0=
+			9gq+m2SfIqZdO4RnP+Q5bwx0h1nftPpvwkJZZ8jBiZE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-Xox-uE-CSp.nib</key>
+		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tLn9sXR8MeEswp8E6QAEP9iulwA=
+			AqAce3tUNc5wJ9gRUZYmJHDuZz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ujDwBxoQqC+Lu7or83mtVHVRABOJPZ1wQue2AWHVVSg=
+			mNJC2IGHpo6BnIHP1hTUB8o9ZkPkNdBQQr9beQh/V6Q=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/Xox-uE-CSp-view-dkL-ZU-Zw4.nib</key>
+		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d+TdMVynSI2F84b3vq0INyAo6Dw=
+			FrxJ1DgXOfHhKzhNYaGmeEyoj54=
 			</data>
 			<key>hash2</key>
 			<data>
-			japS8NRg+9mon9etxbNWGGX+L8F8cTwl+mP9ndq4UYY=
+			jJogSiThCKeh81p5vRQMoyDonJP3qzP3AQVrt+ZD7XQ=
 			</data>
-			<key>optional</key>
-			<true/>
+		</dict>
+		<key>Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TCxqtoNftUaC3yBQ/1btkVcgfi8=
+			</data>
+			<key>hash2</key>
+			<data>
+			6od8qvYBs42tZeSSsOnjK4HDc7Jg26ti3QYYbYJuqEo=
+			</data>
+		</dict>
+		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Yx4ouKapVSibZ4u9OTxkb7BswAs=
+			</data>
+			<key>hash2</key>
+			<data>
+			yCoqxXWKDDH8X9YPBu/yjWYcvbLiigLIcRnL4Sp2zUk=
+			</data>
+		</dict>
+		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			msUJEUKLgxqrFmomoyR6QVN85YI=
+			</data>
+			<key>hash2</key>
+			<data>
+			IuJwnBowQXlvnoajjJm1gx+8Wpo5Blmo8swE1ICYMuo=
+			</data>
+		</dict>
+		<key>Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cSoYVFVaukOLLQaxXOajF3PsXe4=
+			</data>
+			<key>hash2</key>
+			<data>
+			5XkPLTUoycP0+mKRh9+dw2HI7Igo+FvkeSDIfsJM/RY=
+			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
@@ -273,6 +323,17 @@
 			<key>hash2</key>
 			<data>
 			dxH7nkJwZgOMO2piVKprv0hM3N8S65eGT+hz/QFVXAY=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UIWHE/Dy6+jPX0wz0/+wacnjp9o=
+			</data>
+			<key>hash2</key>
+			<data>
+			nHurgKzrJA2HAB3zAAcrsBbrWB7w6l7ECEsEmb/5UmE=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftUIKit.dylib</key>

@@ -137,38 +137,83 @@ SWIFT_CLASS("_TtC19CollectionViewTESST11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 @class UIImageView;
+@class UILabel;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC19CollectionViewTESST8ChatCell")
 @interface ChatCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified chatLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified chatImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified chatLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIImagePickerController;
+@class FIRDatabaseReference;
 @class UICollectionView;
+@class UICollectionViewLayout;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC19CollectionViewTESST8ChatRoom")
 @interface ChatRoom : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UINavigationControllerDelegate>
+@property (nonatomic, strong) UIImagePickerController * _Null_unspecified picker;
+@property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView2;
 @property (nonatomic, strong) ChatCell * _Nullable secondClass;
-@property (nonatomic, strong) UIImagePickerController * _Null_unspecified picker;
 - (void)didReceiveMemoryWarning;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAt:(NSIndexPath * _Nonnull)indexPath;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)showCellTitleAlert;
 - (IBAction)didSelectCreateButton;
+- (void)handleLogout;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIView;
+@class UIButton;
+@class UITextField;
+@class UISegmentedControl;
+@class NSLayoutConstraint;
+
+SWIFT_CLASS("_TtC19CollectionViewTESST19LoginViewController")
+@interface LoginViewController : UIViewController
+- (void)viewDidLoad;
+- (void)signupErrorAlert:(NSString * _Nonnull)title message:(NSString * _Nonnull)message;
+- (void)loginErrorAlert:(NSString * _Nonnull)title message:(NSString * _Nonnull)message;
+@property (nonatomic, readonly, strong) UIView * _Nonnull inputsContainerView;
+@property (nonatomic, strong) UIButton * _Nonnull loginRegisterButton;
+- (void)handleLoginRegister;
+- (void)handleLogin;
+- (void)handleRegister;
+@property (nonatomic, readonly, strong) UITextField * _Nonnull nameTextField;
+@property (nonatomic, readonly, strong) UIView * _Nonnull nameSeparatorView;
+@property (nonatomic, readonly, strong) UITextField * _Nonnull emailTextField;
+@property (nonatomic, readonly, strong) UIView * _Nonnull emailSeparatorView;
+@property (nonatomic, readonly, strong) UITextField * _Nonnull passwordTextField;
+@property (nonatomic, readonly, strong) UIImageView * _Nonnull profileImageView;
+@property (nonatomic, strong) UISegmentedControl * _Nonnull loginRegisterSegmentedControl;
+- (void)handleLoginRegisterChange;
+- (void)setupLoginRegisterSegmentedControl;
+- (void)setupProfileImageView;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable inputsContainerViewHeightAnchor;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable nameTextFieldHeightAnchor;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable emailTextFieldHeightAnchor;
+@property (nonatomic, strong) NSLayoutConstraint * _Nullable passwordTextFieldHeightAnchor;
+- (void)setupInputsContainerView;
+- (void)setupLoginRegisterButton;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIColor (SWIFT_EXTENSION(CollectionViewTESST))
+- (nonnull instancetype)initWithR:(CGFloat)r g:(CGFloat)g b:(CGFloat)b;
 @end
 
 #pragma clang diagnostic pop
